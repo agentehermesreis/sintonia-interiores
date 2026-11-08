@@ -29,10 +29,15 @@ jobs:
         with:
           enablement: true
 
-      - name: Empacotar site
+      - name: Preparar arquivos do site
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' ./ _site/
+
+      - name: Empacotar
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "_site"
 
       - name: Publicar
         id: deployment
