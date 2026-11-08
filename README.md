@@ -1,5 +1,7 @@
 # Sintonia Interiores — landing page
 
+**No ar:** <https://agentehermesreis.github.io/sintonia-interiores/>
+
 Página estática (HTML, CSS e JS puros) criada a partir da apresentação
 `Sintonia Interiores.pptx` e dos Projetos Integradores do grupo.
 
