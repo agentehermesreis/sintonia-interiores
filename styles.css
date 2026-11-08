@@ -437,8 +437,9 @@ body.menu-open::after{
 @media (max-width: 680px){
   .hero{ padding-top: 122px; padding-bottom: 64px; min-height: auto; }
 
-  /* Citação grande em tela estreita: justificar abriria vãos excessivos. */
-  .mission blockquote{ text-align: left; font-size: 1.15rem; }
+  /* Citação em tela estreita: mantém justificado como o resto do corpo (issue #2).
+     hyphens: auto, já herdado da regra base, reduz os vãos entre palavras. */
+  .mission blockquote{ font-size: 1.15rem; }
   .hero-text{ grid-template-columns: 1fr; gap: 0; }
   .hero-text p{ font-size: 14.5px; }
   .hero h1{ font-size: clamp(1.5rem, 6.3vw, 1.85rem); }
