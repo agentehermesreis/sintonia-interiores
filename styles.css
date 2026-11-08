@@ -226,14 +226,17 @@ body.menu-open::after{
 
 /* ---------- valores ---------- */
 .values-section{ background: var(--bg-alt); border-block: 1px solid var(--line); }
-.values{ display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 56px); margin-top: 30px; }
+.values{ display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 44px); margin-top: 30px; }
 .value{ padding-top: 26px; border-top: 1px solid var(--line); }
 .value-num{
   font-family: var(--display); font-size: 10.5px; letter-spacing: .24em; color: var(--accent);
   display: block; margin-bottom: 12px; text-transform: uppercase;
 }
 .value h3{ font-size: 1.35rem; margin-bottom: 10px; font-weight: 500; }
-.value p{ font-size: 14px; color: var(--muted); margin: 0; max-width: 30ch; }
+.value p{
+  font-size: 14.5px; line-height: 1.7; color: var(--muted); margin: 0; max-width: none;
+  text-align: justify; text-justify: inter-word; hyphens: auto; -webkit-hyphens: auto;
+}
 
 /* ---------- missão ---------- */
 .mission{ background: var(--accent); color: var(--bg); padding: clamp(68px, 8.5vw, 116px) 0; position: relative; overflow: hidden; }
@@ -410,7 +413,7 @@ body.menu-open::after{
 @media (max-width: 680px){
   .hero{ padding-top: 122px; padding-bottom: 64px; min-height: auto; }
   .hero-text{ grid-template-columns: 1fr; gap: 0; }
-  .hero-text p, .lead, .bio, .history-copy p, .project-body > p, .contact-copy > p{
+  .hero-text p, .lead, .bio, .history-copy p, .project-body > p, .contact-copy > p, .value p{
     text-align: left; hyphens: none;
   }
   .hero-text p{ font-size: 14.5px; }
