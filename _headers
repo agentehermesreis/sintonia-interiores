@@ -1,0 +1,11 @@
+# Cabeçalhos usados pelo Cloudflare Pages (e pelo Netlify).
+# O GitHub Pages ignora este arquivo.
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
