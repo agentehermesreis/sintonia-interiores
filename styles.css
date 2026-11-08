@@ -45,7 +45,7 @@ h1,h2,h3{ font-family: var(--display); font-weight: 500; color: var(--ink); marg
 p{ margin: 0 0 1.1em; }
 
 /* Corpo de leitura justificado; microtextos ficam alinhados à esquerda. */
-.hero-text p, .lead, .bio, .history-copy p, .project-body > p, .contact-copy > p{
+.hero-text p, .lead, .bio, .history-copy p, .project-body > p, .contact-copy > p, .section-note, .g-cta p{
   text-align: justify; text-justify: inter-word;
   hyphens: auto; -webkit-hyphens: auto;
 }
@@ -313,7 +313,7 @@ body.menu-open::after{
 }
 .g-cta p{
   margin: 0; font-family: var(--display); font-weight: 400;
-  font-size: clamp(1.15rem, 1.6vw, 1.5rem); line-height: 1.24; text-align: left;
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem); line-height: 1.24;
 }
 .g-cta span{
   font-family: var(--display); font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
@@ -458,7 +458,7 @@ body.menu-open::after{
 }
 .g-cta p{
   margin: 0; font-family: var(--display); font-weight: 400;
-  font-size: clamp(1.15rem, 1.6vw, 1.5rem); line-height: 1.24; text-align: left;
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem); line-height: 1.24;
 }
 .g-cta span{
   font-family: var(--display); font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
